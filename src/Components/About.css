@@ -1,0 +1,40 @@
+.gridabout{
+    margin:50px auto;
+    width:98%;
+    display:grid;
+    background-color: rgba(250, 235, 215, 0.514);
+    grid-template-columns: 80% 20%;
+}
+
+.gridabout >div {
+    text-align: justify;
+    text-justify: inter-word;
+    padding:1em;
+  
+}
+
+.gridabout >div ul{
+    margin:44px auto;
+    width:95%;
+    gap:6em;
+}
+.gridabout >div:nth-child(odd){
+    background-color:  antiquewhite;
+}
+
+@media screen and (max-width:900px) {
+    .gridabout{
+        margin:50px auto;
+        width:98%;
+        display:grid;
+        background-color: rgba(250, 235, 215, 0.514);
+        grid-template-columns: 60% 20%;
+    }
+    .gridabout >div {
+        text-align: justify;
+        text-justify: inter-word;
+        padding:1em;
+        font-size: 10px;
+    }
+    
+}
