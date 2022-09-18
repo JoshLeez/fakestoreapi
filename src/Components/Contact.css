@@ -1,0 +1,40 @@
+.containers{
+    padding:1em;
+    widtH:100%;   
+    text-align: center;
+}   
+
+#contain{
+    display:grid;
+    grid-template-columns: repeat(3, 5fr);
+     justify-items:center;
+    }
+
+
+.imgcontact{
+    height:100%;
+    width:60px;
+    grid-auto-rows:minmax(100px,auto);
+}
+
+.imgcontact:hover{
+    opacity: 0.8;
+
+}
+
+@media screen and (max-width:900px) {
+    #contain{
+        display:grid;
+        grid-template-columns: repeat(3, 5fr);
+         justify-items:center;
+        }
+    .imgcontact{
+        height:100%;
+        width:40px;
+        grid-auto-rows:minmax(100px,auto);
+    }
+    #contain > p{
+       text-align: center;
+       font-size: 10px;
+    }
+}
